@@ -1,0 +1,53 @@
+###
+GET http://localhost:6002/countries?page=17&size=11
+Accept: application/json
+Content-Type: application/json
+###
+GET http://localhost:6002/countries?search=2
+Accept: application/json
+Content-Type: application/json
+
+###
+GET http://localhost:6002/countries
+Accept: application/json
+Content-Type: application/json
+
+###
+GET http://localhost:6002/countries/15
+Accept: application/json
+Content-Type: application/json
+
+###
+POST http://localhost:6002/countries
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Nigeria2",
+  "population": "33931",
+  "landAreaInKm2":"60",
+  "densityPKm2":"566"
+}
+
+###
+GET http://localhost:6002/countries/search?name=x
+Accept: application/json
+Content-Type: application/json
+
+
+
+###
+#POST http://localhost:6002/countries/addAll
+#Accept: application/json
+#Content-Type: application/json
+#
+#[
+#  {
+#  "name": "Nigeria",
+#  "capital": "Abuja"
+#},
+#  {
+#    "name": "USA",
+#    "capital": "WashingtonDC"
+#  }
+#]
